@@ -1,3 +1,4 @@
+# rubocop:disable Style/GlobalVars
 require 'nokogiri'
 require 'open-uri'
 
@@ -11,16 +12,16 @@ def scraper
     job_listings = doc.css('div.jobsearch-SerpJobCard')
     job_listings.each do |job_ad|
       job = {
-        title: job_ad.css('h2 a')[0].attributes['title'].value.gsub(/\n/, ''),
-        company: job_ad.css('span.company').text.gsub(/\n/, ''),
-        location: job_ad.css('span.location').text.gsub(/\n/, ''),
-        link: 'https://indeed.com' + job_ad.css('h2 a')[0].attributes['href'].value.gsub(/\n/, ''),
-        salary: job_ad.css('span.salaryText').text.gsub(/\n/,'')
+        title: job_ad.css('h2 a')[0].attributes['title'].value.delete("\n"),
+        company: job_ad.css('span.company').text.delete("\n"),
+        location: job_ad.css('span.location').text.delete("\n"),
+        link: 'https://indeed.com' + job_ad.css('h2 a')[0].attributes['href'].value.delete("\n"),
+        salary: job_ad.css('span.salaryText').text.delete("\n")
       }
-      job.delete_if {|k, v| v == '' }
+      job.delete_if { |_, v| v == '' }
       $jobs << job
     end
-    reps += 10
+    reps + 10
   end
 end
 
@@ -30,3 +31,4 @@ def displayer
   puts $jobs
 end
 displayer
+# rubocop:enable Style/GlobalVars
