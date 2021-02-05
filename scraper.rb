@@ -3,11 +3,14 @@ require 'nokogiri'
 require 'open-uri'
 
 class Scraper
+  def initialize(entry = 'web+developer')
+    @entry = entry
+  end
   def scraper
     $jobs = []
     5.times do
       reps = 0
-      html = open("https://www.indeed.com/jobs?q=web+developer&l=remote&#{reps}")
+      html = open("https://www.indeed.com/jobs?q=#{@entry}&l=remote&#{reps}")
       doc = Nokogiri::HTML(html)
       job_listings = doc.css('div.jobsearch-SerpJobCard')
       job_listings.each do |job_ad|
