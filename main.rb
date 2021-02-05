@@ -6,7 +6,7 @@ require_relative 'scraper'
 def displayer
   puts 'enter the profession of choice'
   var1 = gets.chomp
-  var1.gsub! /\s+/, '+'
+  var1.gsub!(/\s+/, '+')
   al = Scraper.new(var1)
   al.scraper
   puts "#{$jobs.length} amount of jobs were found!"

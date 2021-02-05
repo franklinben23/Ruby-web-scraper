@@ -6,6 +6,7 @@ class Scraper
   def initialize(entry = 'web+developer')
     @entry = entry
   end
+
   def scraper
     $jobs = []
     5.times do
