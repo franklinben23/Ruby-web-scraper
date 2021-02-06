@@ -1,6 +1,4 @@
 require './lib/scraper'
-require 'nokogiri'
-require 'open-uri'
 
 describe Scraper do
   describe '.scraper' do
