@@ -12,7 +12,7 @@ A capstone project is the closing project that students will solo-perform. Its g
 
 ## Getting Started
 
-For this project, you can clone the repo, run "bundle install" then "ruby main.rb" on your terminal.
+For this project, you can clone the repo, run "bundle install" then "ruby /lib/main.rb" on your terminal. The program will ask you to select a profession or area of interest to kick off the search, input it via text, then hit enter and the results will be displayed on the terminal
 
 ## Author
 
