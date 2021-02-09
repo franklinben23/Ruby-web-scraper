@@ -1,4 +1,4 @@
-require './lib/validation'
+require_relative '../lib/validation'
 
 describe Validation do
   describe '.validator' do

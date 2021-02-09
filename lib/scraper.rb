@@ -2,11 +2,11 @@ require 'nokogiri'
 require 'open-uri'
 
 class Scraper
-  attr_accessor :jobs
+  attr_accessor :jobs, :entry, :reps
   def initialize(entry)
     @entry = entry
     @jobs = []
-    @reps = 5
+    @reps = 4
   end
 
   def scraper

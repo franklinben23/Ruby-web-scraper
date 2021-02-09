@@ -1,7 +1,7 @@
 # rubocop:disable Metrics/MethodLength
 require 'nokogiri'
 require 'open-uri'
-require_relative 'scraper'
+require_relative '../lib/scraper'
 require_relative '../lib/validation'
 
 def displayer

@@ -4,7 +4,7 @@
 
 > This is a capstone project for the Ruby section of the Technical Skills Curriculum.
 
-A capstone project is the closing project that students will solo-perform. Its goal is to assess the student's technical and professional skills from the course that it is closing. For This project, I builded a web scraper that searches for remote web developing jobs a list of the results, detailing their title, company name, location, link and salary.
+A capstone project is the closing project that students will solo-perform. Its goal is to assess the student's technical and professional skills from the course that it is closing. For This project, I buit a web scraper that searches for remote web developing jobs a list of the results, detailing their title, company name, location, link and salary.
 
 ## Built With
 
@@ -29,6 +29,12 @@ Now that you have a copy of the app locally the usage is pretty straightforward:
 3. it will then display the supported professions, you should only select one of the list.
 4. when you select the profession the program will take a few seconds run, remember it is waiting for an internet search result.
 5. The output that it will return is an array of the resulting jobs, with each job being an object and containing the job's info: title, company, location, link and salary(bear in mind not all jobs show the salary publicly, so only the ones that do will display)
+
+## Rspec
+
+-to check the tests first make sure you have rspec installed on your device, you can install by following the guidelines [here](https://www.tutorialspoint.com/rspec/rspec_introduction.htm)
+
+-when everything is set up, navigate to the root of the project and type "rspec" in the terminal, the tests will run and the results will be outputted
 
 ## Author
 
