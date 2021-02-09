@@ -14,7 +14,7 @@ A capstone project is the closing project that students will solo-perform. Its g
 
 -To have access to this project, it is recommended that you clone it on your local machine, using the following the guideline:
 
-1. Go to the [repository](https://github.com/franklinben23/Ruby-web-scraper/tree/develop), especifically the develop branch. Click the link! it will take you there ;).
+1. Go to the [repository](https://github.com/franklinben23/Ruby-web-scraper/tree/feature/web-scraper), especifically the feature/web-scraper branch. Click the link! it will take you there ;).
 2. You can clone the project by clicking on the green button at the top menu labeled "Code", then clicking the paper holder sign to copy it.
 3. open a folder in your text editor of choice, open the terminal and type: git clone _paste the copied repo link_
 4. make sure you are in the new repository the folder, if not navigate into it.
